@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "FocusTime",
+    "slug": "focustime",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/FocusTime_logo.png",
@@ -12,6 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "android": {
+      "package": "com.mohsinansari0705.focustime",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -19,8 +21,10 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "28711a86-a8e9-4a7b-a9c2-353cbed82a41"
+      }
     }
   }
 }

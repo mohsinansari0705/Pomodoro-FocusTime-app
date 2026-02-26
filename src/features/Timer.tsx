@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Vibration } from 'react-native';
+import { Audio } from 'expo-av';
 import { ProgressBar } from 'react-native-paper';
 import { useKeepAwake } from 'expo-keep-awake';
 import { Countdown } from '../components/countdown';
@@ -24,7 +25,22 @@ export const Timer = ({ focusSubject, clearSubject, onTimerEnd }: TimerProps) =>
   
   useKeepAwake();
 
+  const playTimesUpSound = async () => {
+    try {
+      const { sound } = await Audio.Sound.createAsync(
+        require('../../assets/times_up_sound.wav')
+      );
+      await sound.playAsync();
+      setTimeout(() => {
+        sound.unloadAsync();
+      }, 9000);
+    } catch (e) {
+      console.warn('Could not play sound', e);
+    }
+  };
+
   const onEnd = (reset: () => void) => {
+    playTimesUpSound();
     Vibration.vibrate(PATTERN);
     setIsStarted(false);
     setProgress(1);

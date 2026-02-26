@@ -36,29 +36,29 @@ A clean, distraction-free **Pomodoro-based focus timer** built with **React Nati
 
 ---
 
-## 🚀 Getting Started
+## � Download & Install
 
-### Prerequisites
+### Direct Download
 
-- [Node.js](https://nodejs.org/) (v18+)
-- [Expo CLI](https://docs.expo.dev/get-started/installation/) — `npm install -g expo-cli`
-- Android device or emulator (via [Android Studio](https://developer.android.com/studio))
+- **[Download APK](https://expo.dev/artifacts/eas/2gjCu1uzmC75e5eAYLpejb.apk)** — click to download directly
+- Or grab the [`FocusTime.apk`](https://github.com/mohsinansari0705/Pomodoro-FocusTime-app/blob/main/FocusTime.apk) file from the root of this repository
 
 ### Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/mohsinansari0705/Pomodoro-FocusTime-app.git
-cd Pomodoro-FocusTime-app
+1. Transfer the `.apk` file to your Android device (via USB, Google Drive, Telegram, etc.)
+2. Open the file on your phone
+3. If prompted, enable **"Install from unknown sources"** in Settings
+4. Tap **Install** and you're good to go!
 
-# Install dependencies
-npm install
+---
 
-# Start the development server
-npm start
-```
+## 🎯 How to Use
 
-Scan the QR code with the **Expo Go** app on your Android device, or press `a` to launch in an Android emulator.
+1. **Add a subject** — type what you want to focus on and tap ✚
+2. **Set your timer** — choose 10, 15, or 20 minutes
+3. **Hit Start** — the countdown begins and your screen stays awake
+4. **Stay focused** — when time's up, the app vibrates and plays a sound
+5. **Track progress** — completed sessions appear on the home screen and persist across app restarts
 
 ---
 

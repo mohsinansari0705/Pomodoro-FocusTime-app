@@ -28,7 +28,7 @@ export const Timer = ({ focusSubject, clearSubject, onTimerEnd }: TimerProps) =>
   const playTimesUpSound = async () => {
     try {
       const { sound } = await Audio.Sound.createAsync(
-        require('../../assets/times_up_sound.wav')
+        require('../../assets/times_up_sound.mp3')
       );
       await sound.playAsync();
       setTimeout(() => {
